@@ -1,10 +1,87 @@
-local Energize = Instance.new("ScreenGui") -- The actual GUI
+local Test = Instance.new("ScreenGui") -- The actual GUI
 local SideFrame = Instance.new("Frame") -- Visible when GUI is closed
 local OpenGUI = Instance.new("TextButton") -- Part of SideFrame
 local SideFrameTitle = Instance.new("TextLabel") -- Part of SideFrame
 local MainFrame = Instance.new("Frame") -- All of the stuff on the main frame
 local GuiBottomFrame = Instance.new("Frame") -- Part of Active Frame
 local Credits = Instance.new("TextLabel") -- Credits to illremember, hello there
-local ScrollingFrame = Instance.new("ScrollingFrame") -- The scrolling frame of animations
+local ScrollingFrame1 = Instance.new("ScrollingFrame") -- The scrolling frame1
 local CheckR = Instance.new("TextLabel") -- Check if R15 or R6
-local ScrollingFrameR15 = Instance.new("ScrollingFrame") -- The scrolling frame of R15 animations
+local ScrollingFrame2 = Instance.new("ScrollingFrame") -- The scrolling frame2
+
+local GuiTopFrame = Instance.new("Frame") -- Top of the main frame
+local CloseGUI = Instance.new("TextButton") -- To close the GUI
+local Title = Instance.new("TextLabel") -- Actual title of GUI
+
+Test.Name = "Test GUI"
+Test.Parent = game.Players.LocalPlayer.PlayerGui
+
+SideFrame.Name = "SideFrame"
+SideFrame.Parent = Test
+SideFrame.Active = true
+SideFrame.BackgroundColor3 = Color3.new(1, 0.329412, 0.329412)
+SideFrame.Draggable = true
+SideFrame.Position = UDim2.new(0, 376, 0, 125)
+SideFrame.Size = UDim2.new(0, 460, 0, 32)
+SideFrame.Visible = false
+
+OpenGUI.Name = "OpenGUI"
+OpenGUI.Parent = SideFrame
+OpenGUI.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenGUI.BackgroundTransparency = 0.5
+OpenGUI.Position = UDim2.new(0, 426, 0, 0)
+OpenGUI.Size = UDim2.new(0, 34, 0, 32)
+OpenGUI.Font = Enum.Font.SourceSans
+OpenGUI.FontSize = Enum.FontSize.Size48
+OpenGUI.Text = "X"
+OpenGUI.TextColor3 = Color3.new(0.333333, 0, 0)
+OpenGUI.TextSize = 40
+OpenGUI.TextWrapped = true
+
+SideFrameTitle.Name = "SideFrameTitle"
+SideFrameTitle.Parent = SideFrame
+SideFrameTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+SideFrameTitle.BackgroundTransparency = 1
+SideFrameTitle.Position = UDim2.new(0, 170, 0, 0)
+SideFrameTitle.Size = UDim2.new(0, 119, 0, 31)
+SideFrameTitle.Font = Enum.Font.Arial
+SideFrameTitle.FontSize = Enum.FontSize.Size24
+SideFrameTitle.Text = "Test"
+SideFrameTitle.TextSize = 21
+SideFrameTitle.TextStrokeColor3 = Color3.new(0.27451, 0.92549, 0.905882)
+SideFrameTitle.TextStrokeTransparency = 0.69999998807907
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Test
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+MainFrame.BackgroundTransparency = 1
+MainFrame.Draggable = true
+MainFrame.Position = UDim2.new(0, 376, 0, 125)
+MainFrame.Size = UDim2.new(0, 444, 0, 280)
+
+GuiBottomFrame.Name = "Gui BottomFrame"
+GuiBottomFrame.Parent = MainFrame
+GuiBottomFrame.BackgroundColor3 = Color3.new(1, 0.329412, 0.329412)
+GuiBottomFrame.BorderColor3 = Color3.new(0.243137, 0.243137, 0.243137)
+GuiBottomFrame.Position = UDim2.new(0, 0, 0, 247)
+GuiBottomFrame.Size = UDim2.new(0, 460, 0, 32)
+
+Credits.Name = "Credits"
+Credits.Parent = GuiBottomFrame
+Credits.BackgroundColor3 = Color3.new(1, 1, 1)
+Credits.BackgroundTransparency = 1
+Credits.Size = UDim2.new(0, 460, 0, 32)
+Credits.FontSize = Enum.FontSize.Size14
+Credits.Text = "By ItzSunFox | notsun#1001"
+Credits.TextColor3 = Color3.new(0.219608, 0.219608, 0.219608)
+Credits.TextSize = 14
+Credits.TextStrokeColor3 = Color3.new(0.141176, 0.870588, 0.713726)
+Credits.TextStrokeTransparency = 0.69999998807907
+Credits.TextWrapped = true
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 0.564706, 0.564706)
+ScrollingFrame.Position = UDim2.new(0, 0, 0, 32)
+ScrollingFrame.Size = UDim2.new(0, 460, 0, 215)
+ScrollingFrame.ScrollBarThickness = 13
