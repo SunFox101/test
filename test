@@ -1,1 +1,10 @@
-print('Hello, World')
+local Energize = Instance.new("ScreenGui") -- The actual GUI
+local SideFrame = Instance.new("Frame") -- Visible when GUI is closed
+local OpenGUI = Instance.new("TextButton") -- Part of SideFrame
+local SideFrameTitle = Instance.new("TextLabel") -- Part of SideFrame
+local MainFrame = Instance.new("Frame") -- All of the stuff on the main frame
+local GuiBottomFrame = Instance.new("Frame") -- Part of Active Frame
+local Credits = Instance.new("TextLabel") -- Credits to illremember, hello there
+local ScrollingFrame = Instance.new("ScrollingFrame") -- The scrolling frame of animations
+local CheckR = Instance.new("TextLabel") -- Check if R15 or R6
+local ScrollingFrameR15 = Instance.new("ScrollingFrame") -- The scrolling frame of R15 animations
